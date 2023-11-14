@@ -1,11 +1,1 @@
-name: Mon workflow
-on: [push, pull_request]
 
-env:
-  VARIABLE_NAME: value
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: display variable
-        run: echo ${{ env.VARIABLE_NAME }}
